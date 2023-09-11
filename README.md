@@ -3,4 +3,4 @@
 
 2.spark_submit_job.py - Airflow dag to submit pyspark code to the dataproc cluster in GCP.
 
-3.sparkcode.py - This file contains the actual pyspark transformation which is by airflow dag to run on the spark cluster.
+3.sparkcode.py - This file contains the actual pyspark transformation which is used by airflow dag to run on the spark cluster.
