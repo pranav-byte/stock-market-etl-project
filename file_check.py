@@ -4,7 +4,7 @@ from airflow.operators.python import PythonOperator
 from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 from datetime import datetime, timedelta
 
-# Define default_args and other configurations for your main DAG
+
 default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
@@ -13,7 +13,7 @@ default_args = {
     'retry_delay': timedelta(minutes=5),
 }
 
-# Create the main DAG
+
 main_dag = DAG(
     'main_dag',
     default_args=default_args,
